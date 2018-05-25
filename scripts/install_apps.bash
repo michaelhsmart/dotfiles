@@ -47,12 +47,10 @@ MAIN_APPS=(
 	npm
 	octave
 	openvpn
-	opera-stable
 	pandoc
 	pavucontrol
 	pinta
 	python-pip
-	spotify-client
 	syncthing
 	texlive
 	texlive-latex-extra
@@ -129,14 +127,6 @@ repository_additions()
 	sudo add-apt-repository -y ppa:thomas-schiex/blender
 	sudo add-apt-repository -y ppa:minecraft-installer-peeps/minecraft-installer
 	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
-	# Spotify
-	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410
-	echo 'deb http://repository.spotify.com stable non-free' | sudo tee /etc/apt/sources.list.d/spotify.list
-
-	# Opera
-	wget -O - http://deb.opera.com/archive.key | sudo apt-key add -
-	echo 'deb https://deb.opera.com/opera-stable/ stable non-free' | sudo tee /etc/apt/sources.list.d/opera-stable.list
 
 	# Syncthing
 	curl -s https://syncthing.net/release-key.txt | sudo apt-key add -

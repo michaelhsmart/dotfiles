@@ -6,8 +6,5 @@
 # Choices: I DECLINE, I AGREE
 steam steam/question select I AGREE
 
-# Do you want to update Opera together with the rest of the system?
-opera-stable opera-stable/add-deb-source boolean true
-
 # Should non-superusers be able to capture packets?
 wireshark-common wireshark-common/install-setuid boolean false
